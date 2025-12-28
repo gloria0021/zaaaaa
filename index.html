@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="デジタル名刺 Powered-by AntiGravity">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>デジタル名刺</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 背景装飾 -->
+    <div class="background-gradient"></div>
+
+    <!-- プロフィールヘッダー -->
+    <header class="profile-header">
+        <img class="cover-photo" id="cover-photo" src="" alt="カバー写真">
+
+        <!-- メールFAB -->
+        <div class="fab-container">
+            <a href="#" class="fab" id="fab-mail" aria-label="メールを送る">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+            </a>
+            <span class="fab-label">メールで送る</span>
+        </div>
+
+        <div class="profile-info-card">
+            <h1 class="name" id="profile-name">---</h1>
+            <div class="info-group">
+                <span class="company" id="profile-company">---</span>
+                <span class="title" id="profile-title">---</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- 連絡先 -->
+        <section class="contact-section glass-card animate-fade-in delay-1">
+            <h2 class="section-title">連絡先</h2>
+            <div class="contact-list">
+                <a href="#" class="contact-item" id="contact-email">
+                    <div>
+                        <span class="contact-label">メール</span>
+                        <span class="contact-value">---</span>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="#" class="contact-item" id="contact-phone">
+                    <div>
+                        <span class="contact-label">電話番号</span>
+                        <span class="contact-value">---</span>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="#" class="contact-item" id="contact-address" target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <span class="contact-label">住所</span>
+                        <span class="contact-value">---</span>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="#" class="contact-item" id="contact-website" target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <span class="contact-label">Webサイト</span>
+                        <span class="contact-value">---</span>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- SNS -->
+        <section class="social-section glass-card animate-fade-in delay-2">
+            <h2 class="section-title">ソーシャルメディア</h2>
+            <div class="social-links">
+                <a href="#" class="social-link facebook" id="social-facebook" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-link instagram" id="social-instagram" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- 資格 -->
+        <section class="certifications-section glass-card animate-fade-in delay-3">
+            <h2 class="section-title">資格・認定</h2>
+            <ul class="certification-list" id="certification-list">
+                <!-- script.js -->
+            </ul>
+        </section>
+
+        <!-- 自己紹介 -->
+        <section class="bio-section glass-card animate-fade-in delay-4">
+            <h2 class="section-title">自己紹介</h2>
+            <div class="bio-content" id="bio-content">
+                <!-- script.js -->
+            </div>
+        </section>
+
+        <!-- フッター -->
+        <footer class="footer animate-fade-in delay-5">
+            <p id="footer-copy">© 2025 Digital Business Card</p>
+            <p class="powered-by">Refactored by AntiGravity</p>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="profile.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
